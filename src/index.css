@@ -1,0 +1,40 @@
+main {
+  min-height: 1200px;
+}
+
+Link {
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+
+nav {
+  background-color: whitesmoke;
+}
+.nav-link {
+  color: black;
+}
+.bg-jumbo {
+  background-image: url("/2650792.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 700px;
+}
+.card {
+  height: 100%;
+
+  img {
+    object-fit: contain;
+    aspect-ratio: 1/1;
+  }
+}
+
+footer {
+  background-color: whitesmoke;
+}
