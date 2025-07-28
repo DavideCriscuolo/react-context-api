@@ -7,9 +7,17 @@ export default function Cards({ products }) {
         return (
           <div key={product.id} className="col p-2">
             <div className="card p-3">
-              <img src={product.image} alt="Title" />
+              <Link to={`/Products/${product.id}`}>
+                <img
+                  className="imgProduct w-100"
+                  src={product.image}
+                  alt="Title"
+                />
+              </Link>
               <div className="card-body">
-                <h4 className="card-title">{product.title}</h4>
+                <Link className="link" to={`/Products/${product.id}`}>
+                  <h4 className="card-title">{product.title}</h4>{" "}
+                </Link>
                 <p className="card-text">
                   <strong>Descrizione prodotto: </strong> {product.description}
                 </p>
